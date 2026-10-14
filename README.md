@@ -4,7 +4,7 @@
 Гүл дүкені
 
 ## Сайтқа сілтеме
-https://pion.github.io/landing-nurmolda/
+https://medeu21939-dotcom.github.io/landing-nurmolda/
 
 ## Нені жасадым
 - HTML5 семантикалық тегтер: `header`, `nav`, `main`, `section`, `article`, `footer`
