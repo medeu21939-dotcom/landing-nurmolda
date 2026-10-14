@@ -1,0 +1,44 @@
+:root{--ink:#10262d;--bg:#f7fafb;--brand:#0f4c5c;--accent:#ffd166;--line:#cfdde1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:1.0625rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .6em}
+h1{font-size:clamp(2rem,6vw,3.25rem)}
+h2{font-size:clamp(1.5rem,4vw,2rem)}
+p{max-width:65ch}
+img{max-width:100%;height:auto;display:block;border-radius:12px}
+a{color:var(--brand)}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.container{width:min(1100px,100% - 2rem);margin-inline:auto}
+section.container{padding-block:3rem}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem;z-index:10}
+
+.site-header{background:var(--brand);position:sticky;top:0;z-index:5}
+.bar{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;padding-block:.75rem}
+.logo{color:#fff;font-weight:700;text-decoration:none;font-size:1.15rem}
+nav ul{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;list-style:none;margin:0;padding:0}
+nav a{color:#fff;text-decoration:none;padding:.25rem 0}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--accent)}
+
+.hero{display:grid;gap:2rem;align-items:center;grid-template-columns:1fr}
+.btn{display:inline-block;background:var(--accent);color:var(--ink);font:inherit;font-weight:700;border:0;border-radius:8px;padding:.75rem 1.5rem;text-decoration:none;cursor:pointer}
+.btn:hover{background:#f5c04d}
+
+.grid{display:grid;gap:1rem;grid-template-columns:1fr}
+article{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1.25rem}
+article h3{font-size:1.2rem}
+
+form{display:grid;gap:.5rem;max-width:520px}
+label{font-weight:600;margin-top:.5rem}
+input,textarea{font:inherit;padding:.65rem .75rem;border:1px solid #8aa3aa;border-radius:8px;background:#fff;width:100%}
+form .btn{justify-self:start;margin-top:1rem}
+
+.site-footer{background:var(--ink);color:#dbe7ea;padding-block:1.5rem;margin-top:2rem}
+.site-footer p{margin:0}
+
+@media (min-width:768px){
+  .hero{grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

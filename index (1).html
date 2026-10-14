@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Менің тақырыбым — лендинг</title>
+  <meta name="description" content="Менің жеке тақырыбым бойынша бір беттік сайт: сипаттама, артықшылықтар және байланыс.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Негізгі мазмұнға өту</a>
+
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo" href="#top">Менің тақырыбым</a>
+      <nav aria-label="Негізгі мәзір">
+        <ul>
+          <li><a href="#about">Біз туралы</a></li>
+          <li><a href="#advantages">Артықшылықтар</a></li>
+          <li><a href="#contacts">Байланыс</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <div>
+        <h1>Тақырыптың атауы осы жерде</h1>
+        <p>Тақырыбыңыз туралы бір-екі сөйлемдік қысқаша сипаттама жазыңыз.</p>
+        <a class="btn" href="#contacts">Бізбен байланысу</a>
+      </div>
+      <img src="images/hero.svg" alt="Тақырыпты көрсететін иллюстрация" width="640" height="400">
+    </section>
+
+    <section class="container" id="about">
+      <h2>Біз туралы</h2>
+      <p>Бұл бөлімде тақырыптың мәні, тарихы немесе мақсаты туралы жазыңыз. Жолдың ұзындығы оқуға ыңғайлы болу үшін шектелген.</p>
+    </section>
+
+    <section class="container" id="advantages">
+      <h2>Артықшылықтар</h2>
+      <div class="grid">
+        <article>
+          <h3>Бірінші артықшылық</h3>
+          <p>Қысқаша түсіндірме.</p>
+        </article>
+        <article>
+          <h3>Екінші артықшылық</h3>
+          <p>Қысқаша түсіндірме.</p>
+        </article>
+        <article>
+          <h3>Үшінші артықшылық</h3>
+          <p>Қысқаша түсіндірме.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="contacts">
+      <h2>Байланыс</h2>
+      <form action="#" method="post">
+        <label for="name">Аты-жөні</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="message">Хабарлама</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Жіберу</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Аты Тегі. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+</body>
+</html>
